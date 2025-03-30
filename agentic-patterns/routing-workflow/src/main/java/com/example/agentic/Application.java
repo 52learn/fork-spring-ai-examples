@@ -92,7 +92,7 @@ public class Application {
 							Input: """);
 
 			List<String> tickets = List.of(
-					"""
+					/*"""
 							Subject: Can't access my account
 							Message: Hi, I've been trying to log in for the past hour but keep getting an 'invalid password' error.
 							I'm sure I'm using the right password. Can you help me regain access? This is urgent as I need to
@@ -104,7 +104,7 @@ public class Application {
 							Message: Hello, I just noticed a charge of .99 on my credit card from your company, but I thought
 							I was on the .99 plan. Can you explain this charge and adjust it if it's a mistake?
 							Thanks,
-							Sarah""",
+							Sarah""",*/
 
 					"""
 							Subject: How to export data?

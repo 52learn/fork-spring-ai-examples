@@ -2,6 +2,8 @@ package com.example.agentic;
 
 import org.springframework.ai.chat.client.ChatClient;
 
+import java.util.Random;
+
 /**
  * Implements the Prompt Chaining workflow pattern for decomposing complex tasks
  * into a sequence
@@ -124,7 +126,12 @@ public class ChainWorkflow {
 			response = chatClient.prompt(input).call().content();
 
 			System.out.println(String.format("\nSTEP %s:\n %s", step++, response));
-		}
+            try {
+                Thread.sleep((3 + new Random().nextInt(5))*1000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
 
 		return response;
 	}
